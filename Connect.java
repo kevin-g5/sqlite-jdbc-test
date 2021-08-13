@@ -10,11 +10,11 @@ public class Connect {
         Connection conn = null;  
         try {  
             // db parameters  
-            String url = "jdbc:sqlite:C:/databases/notes.db";  
+            String url = "jdbc:sqlite:C:\databases\notes.db";  
             // create a connection to the database  
             conn = DriverManager.getConnection(url);  
               
-            System.out.println("Connection to notes.db has been established.");  
+            System.out.println("Connection to C:\databases\notes.db has been established.");  
               
         } catch (SQLException e) {  
             System.out.println(e.getMessage());  
