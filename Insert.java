@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;  
 import java.sql.SQLException;  
    
-public class InsertRecords {  
+public class Insert {  
    
     private Connection connect() {  
         // SQLite connection string  
@@ -35,7 +35,7 @@ public class InsertRecords {
    
     public static void main(String[] args) {  
    
-        InsertRecords app = new InsertRecords();  
+        Insert app = new Insert();  
         // insert five new rows
         // label 1 = yellow
         // label 2 = green
