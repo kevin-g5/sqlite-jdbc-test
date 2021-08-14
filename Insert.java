@@ -25,8 +25,8 @@ public class Insert {
             Connection conn = this.connect();  
             PreparedStatement pstmt = conn.prepareStatement(sql);  
             pstmt.setString(1, alias);  
-            pstmt.setInteger(2, label);
-            pstmt.setInteger(3, hands);
+            pstmt.setInt(2, label);
+            pstmt.setInt(3, hands);
             pstmt.executeUpdate();  
         } catch (SQLException e) {  
             System.out.println(e.getMessage());  
@@ -36,7 +36,7 @@ public class Insert {
     public static void main(String[] args) {  
    
         Insert app = new Insert();  
-        // insert five new rows
+        // insert five new rows (alias, label, hands)
         // label 1 = yellow
         // label 2 = green
         // label 3 = cyan
